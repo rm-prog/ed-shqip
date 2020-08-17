@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Forcat dhe levizja </title>
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Forcat dhe levizja </h1>
+    <div id="quiz-container">
+        <div id="question"> Si quhet njesia matese e forces dhe cili eshte simboli i njesise matese?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="0" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Njuton - n </button> 
+            <button id="alt2" class="btn" value="1" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Njuton - N </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Neutron - N  </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: Njuton - N</span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button> 
+
+    
+    </center>
+<script src="forces-movement-script.js"></script>
+</body>

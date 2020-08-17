@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Vetite termike te lendes </title>
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Vetite termike te lendes </h1>
+    <div id="quiz-container">
+        <div id="question"> Cfare eshte energjia e brendshme?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="0" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Energjia kinetike mesatare e nje grimce </button> 
+            <button id="alt2" class="btn" value="1" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Shuma e energjise e te gjithe grimcave te nje objekti </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Asnjera nga ato lart  </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: Shuma e energjise e te gjithe grimcave te nje objekti</span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button> 
+
+    
+    </center>
+<script src="thermal-properties-script.js"></script>
+</body>

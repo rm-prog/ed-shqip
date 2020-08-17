@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="find-the-percentage-style.css"/>
+    </head>
+    <body>
+        <div id="heading"> Gjeni sa perqind eshte i mbushur <br>
+        drejtkendeshi poshte</div>
+        <br>
+        <center id="center-div">
+
+        <div id="correct-answer">
+           Diferenca midis pergjigjes se sakte dhe pergjigjes tuaj maksimumi mund te jete 3
+        </div>
+        <br>
+        <button id="startButton">Filloni lojen</button>
+        <br> <br>
+        
+            <label id="input-label" for="output-value">%</label>
+            <input id="output-value" readonly>
+            <br>
+            <br>
+
+            <div id="calculator-container">
+                <div class="grid-item" onclick="numberClick(1)">1</div>
+                <div class="grid-item largePadding" onclick="numberClick(2)">2</div>
+                <div class="grid-item" onclick="numberClick(3)">3</div>  
+                <div class="grid-item" onclick="numberClick(4)">4</div>
+                <div class="grid-item largePadding" onclick="numberClick(5)">5</div>
+                <div class="grid-item" onclick="numberClick(6)">6</div>  
+                <div class="grid-item largePadding" onclick="numberClick(7)">7</div>
+                <div class="grid-item" onclick="numberClick(8)">8</div>
+                <div class="grid-item" onclick="numberClick(9)">9</div>
+                <div class="grid-item red" onclick="deleteNumbers()">C</div>
+                <div class="grid-item" onclick="numberClick(0)" value="0">0</div>
+                <div class="grid-item enter" onclick="enterNumbers()">Enter</div>
+            </div> <br> 
+            <br>
+            <table id="table" class="tftable" border="1">
+                <tr> <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                </table>
+                
+                <br>
+
+                <button class="back" onclick="backHistory()"> < Kthehu </button> <br>
+            </center>
+            
+    <script src="find-the-percentage-script.js"></script>            
+    </body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+}
+
+#header{
+    width: 200px;
+    height: 100px;
+    background-color: lime;
+    font-size: 2.6rem;
+    font-family: cursive;
+    color:#090F39;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    border: 1.5px solid #021495;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding-top: 15px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#intro{
+    width: 420px;
+    position: relative;
+    left: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 2px;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#intro-para{
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#games-menu{
+    padding: 10px;
+    margin: 12px;
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    top: 15px;
+    right: 5px;
+    gap: 10px;
+}
+
+.btn{
+    outline: none;
+    width: 420px;
+    height: 80px;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.lime{
+    background-color: lime;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: rgb(58, 58, 167);
+    color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Kontinenti i Europes</title> 
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Kontinenti i Europes </h1>
+    <div id="quiz-container">
+        <div id="question"> Cili kontinent ndodhet ne jug te Europes?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Azia </button> 
+            <button id="alt2" class="btn" value="1" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Afrika </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Amerika e Jugut </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: Afrika </span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button>
+    
+    </center>
+<script src="shtete-europe-geo-script.js"></script>
+</body>
+</html>

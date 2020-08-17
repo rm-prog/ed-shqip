@@ -1,0 +1,5 @@
+1. Array with correct and incorrect and random sorting (checked)
+2. For loop replacing numbers and letters in random places (checked)
+3. Time counter (checked)
+4. Correct answers (checked)
+5. Stopping the game and showing the result (checked)

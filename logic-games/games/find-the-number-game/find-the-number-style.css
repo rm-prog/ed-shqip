@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  padding: 0;
+  margin: 0;
+}
+
+#heading {
+  width: 300px;
+  height: 80px;
+  padding-top: 10px;
+  margin: 0 auto;
+  border: 1.5px solid #fdc96e;
+  border-radius: 40px;
+  font-size: 2.6rem;
+  background-color: #f9fc8a;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+#startButton {
+  box-shadow: inset 0px 39px 0px -24px #e67a73;
+  background-color: #e4685d;
+  border-radius: 9px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+
+#startButton:hover {
+  background-color: #eb675e;
+}
+#startButton:active {
+  position: relative;
+  top: 1px;
+}
+#time-display {
+  font-size: 1.3rem;
+}
+
+.myButton {
+  width: 21px;
+  height: 22.5px;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 12px 12px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
+  box-sizing: content-box;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.back{
+  width: 120px;
+  height: 50px;
+  padding: 3px;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 200;
+  position: relative;
+  top: 60px;
+  left: 20px;
+}

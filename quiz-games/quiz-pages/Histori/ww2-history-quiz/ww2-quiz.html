@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title>Lufta e dyte Boterore</title> 
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Lufta e dyte Boterore</h1>
+    <div id="quiz-container">
+        <div id="question"> Cilat shtete deklaruan te parat lufte ndaj Gjermanise?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="0" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Rusia dhe SHBA-ja </button> <br>
+            <button id="alt2" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Italia dhe Rusia </button> <br>
+            <button id="alt3" class="btn" value="1" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Britania dhe Franca </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: Britania dhe Franca - ne 3 shtator 1939 Britania dhe Franca deklaruan lufte 
+            ndaj Gjermanise pasi ajo sulmoi Polonine ne 1 shtator 1939 </span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button> 
+
+    
+    </center>
+<script src="ww2-script.js"></script>
+</body>

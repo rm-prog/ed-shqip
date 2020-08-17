@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #heading {
+    width: 400px;
+    height: 90px;
+    padding-top: 10px;
+    margin: 0 auto;
+    border: 1.5px solid #fdc96e;
+    border-radius: 40px;
+    font-size: 2rem;
+    background-color: #f9fc8a;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+  }
+
+  #correct-answer{
+    position: relative;
+    bottom: 20px;
+    display: block;
+    font-size: 1.3rem;
+}
+  
+  #startButton {
+    box-shadow: inset 0px 39px 0px -24px #e67a73;
+    background-color: #e4685d;
+    border-radius: 9px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 8px 15px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+  }
+  
+  #startButton:hover {
+    background-color: #eb675e;
+  }
+
+  #time-display {
+    font-size: 1.3rem;
+  }
+
+  #table1{
+      position: relative;
+      bottom: 20px;
+  }
+  
+  .myButton {
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px black solid;
+    box-sizing: content-box;
+  }
+
+  .lime{
+      background-color: lime;
+  }
+
+  .limegreen{
+      background-color: limegreen;
+  }
+
+  .back{
+    width: 120px;
+    height: 50px;
+    padding: 3px;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 200;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+  

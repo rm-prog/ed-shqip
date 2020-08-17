@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Ekuacionet 1  </title>
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Ekuacionet 1  </h1>
+    <div id="quiz-container">
+        <div id="question"> Gjeni vleren e x-it. <br> 4x+7=71</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="1" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 16 </button> 
+            <button id="alt2" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 15 </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 14  </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: 16 || 71-4 = 4x || 64 = 4x || x = 64/4 || x = 16</span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+    <button class="back" onclick="backHistory()"> < Kthehu </button>
+    </center>
+<script src="ekuacionet1-script.js"></script>
+</body>

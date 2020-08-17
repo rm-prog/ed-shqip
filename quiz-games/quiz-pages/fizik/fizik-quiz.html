@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="stylesheet" type="text/css" href="quiz-menu-style.css">
+    <title> Kuiz-Shqip: Kuize-Fizik</title>
+</head>
+<body>
+    <div id="header">
+        Kuize - Fizik
+    </div> <br> <br>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button> <br>
+    <div id="quiz-menu">
+        <button class="btn yellow" onmouseover="btnMouseOv(this)" onmouseout="btnMouseOut(this)"
+        onclick="goToForcesAndMovement()"> Kuiz - Forcat dhe levizja</button> 
+
+        <button class="btn lime" onmouseover="btnMouseOv(this)" onmouseout="btnMouseOut(this)"
+        onclick="goToRotationalEffects()"> Kuiz - Efektet rrotulluese te forcave</button>
+
+        <button class="btn lightblue" onmouseover="btnMouseOv(this)" onmouseout="btnMouseOut(this)"
+        onclick="goToForcesAndMatter()"> Kuize - Forcat dhe lenda</button>
+
+        <button class="btn blue" onmouseover="btnMouseOv(this)" onmouseout="btnMouseOut(this)"
+        onclick="goToEnergyTransform()"> Kuize - Shnderrimet, transferimet dhe burimet e energjise</button>
+
+        <button class="btn darkviolet" onmouseover="btnMouseOv(this)" onmouseout="btnMouseOut(this)"
+        onclick="goToKineticModel()"> Kuize - Modeli kinetik i lendes</button>
+
+        <button class="btn red" onmouseover="btnMouseOv(this)" onmouseout="btnMouseOut(this)"
+        onclick="goToThermalProperties()"> Kuize - Vetite termike te lendes</button>
+    </div>
+
+<script src="script_quiz-fizik.js"></script>
+</body>
+</html>

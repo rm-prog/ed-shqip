@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Kryeqytetet e Europes </title>
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Kryeqytetet e Europes </h1>
+    <div id="quiz-container">
+        <div id="question"> Cili eshte kryeqyteti i Ukraines?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="1" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Kievi </button> 
+            <button id="alt2" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Lviv </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Donetsk </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: Kievi </span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button>
+    
+    </center>
+<script src="kryeqytete-europe-quiz-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Algjebra 1  </title>
+</head>
+<body> 
+    <center>
+    <h1>Kuiz - Algjebra 1  </h1>
+    <div id="quiz-container">
+        <div id="question"> Me sa eshte e barabarte 5c + cd nese c = 1/5 dhe d = 15?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="0" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 3 </button> 
+            <button id="alt2" class="btn" value="1" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 4 </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 7  </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: 4 || 5 * 1/5 + 1/5 * 15 = 1 + 3 = 4</span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu</button>
+    
+    </center>
+<script src="algjebra1-script.js"></script>
+</body>

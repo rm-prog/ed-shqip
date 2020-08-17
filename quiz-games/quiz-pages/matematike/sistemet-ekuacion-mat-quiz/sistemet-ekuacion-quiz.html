@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Sistemet e ekuacioneve </title>
+</head>
+<body>
+     
+    <center>
+    <h1>Kuiz - Sistemet e ekuacioneve  </h1>
+    <div id="quiz-container">
+        <div id="question"> Gjeni vlerat e x-it dhe y-it. <br> {<sup>2x+y=11</sup> <br>{<sub>6x+y=27</sub></div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="1" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> x=4 dhe y=3 </button> 
+            <button id="alt2" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> x=3 dhe y=4 </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> x=4 dhe y=5  </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: x=4 dhe y=3</span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button>
+    
+    </center>
+<script src="sistemet-ekuacion-script.js"></script>
+</body>

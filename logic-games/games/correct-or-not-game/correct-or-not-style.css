@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #heading {
+    width: 405px;
+    height: 100px;
+    padding-top: 10px;
+    margin: 0 auto;
+    border: 1.5px solid #fdc96e;
+    border-radius: 40px;
+    font-size: 2rem;
+    background-color: #f9fc8a;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+  }
+
+  #time-display{
+    font-size: 1.3rem;
+  }
+
+  #correct-answer{
+    position: relative;
+    bottom: 20px;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+  
+  #startButton {
+    box-shadow: inset 0px 39px 0px -24px #e67a73;
+    background-color: #e4685d;
+    border-radius: 9px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 8px 15px;
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+  }
+  
+  #startButton:hover {
+    background-color: #eb675e;
+  }
+
+  #object{
+      width: 70px;
+      height: 70px;
+      border: 5px black solid;
+  }
+
+  #sakte1{
+    box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+    padding:9px 15px;
+    margin:10px;
+	text-decoration:none;
+  }
+
+  #gabim1{
+    box-shadow:inset 0px 1px 0px 0px #ff0000;
+	background:linear-gradient(to bottom, #ff0000 5%, #ff0000 100%);
+	background-color:#ff0000;
+	border:1px solid #ff0000;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+    padding:9px 15px;
+    margin:10px;
+	text-decoration:none;
+  }
+
+  .back{
+    width: 120px;
+    height: 50px;
+    padding: 3px;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 200;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}

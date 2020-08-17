@@ -1,0 +1,5 @@
+1. DOM Elements(checked)
+2. Start Button(checked)
+3. Clickable Calculator(checked)
+4. Show result(checked)
+5. Fill table cells with red(checked)

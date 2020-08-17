@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Thyesat 1  </title>
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Thyesat 1  </h1>
+    <div id="quiz-container">
+        <div id="question"> Sa eshte 1/2 e 7,5?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="1" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 3,75 </button> 
+            <button id="alt2" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 3,5 </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> 4  </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: 3,75 || 1 * 7,5 / 2 = 7,5/2 = 3,75</span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+    
+    <button class="back" onclick="backHistory()"> < Kthehu </button>
+    </center>
+<script src="thyesa1-script.js"></script>
+</body>

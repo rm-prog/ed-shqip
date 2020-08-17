@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="tap-the-button-style.css" />
+  </head>
+
+  <body>
+    <div id="heading"> Shtypni butonin e duhur </div>
+    <br />
+    <br />
+    <center id="center-div">
+      <button id="startButton">Filloni lojen</button> <br />
+      <div id="time-display">
+        00 : 01
+      </div> 
+      <br>
+       
+      <h2 id="shtypniButonin"> <span id="color">Shtypni butonin e kuq</span>
+        </h2> 
+        <br>
+
+        <div id="button-container">
+            <button class="red button" onclick="colorBtnClick(this)" value="1"></button>
+            <button class="green button" onclick="colorBtnClick(this)" value="0"></button>
+            <button class="orange button" onclick="colorBtnClick(this)" value="0"></button>
+        </div> 
+        <br>
+
+        <button class="back" onclick="backHistory()"> < Kthehu </button> <br>
+      </center>
+      <script src="tap-the-button-script.js"></script>
+    </body>
+
+</html>

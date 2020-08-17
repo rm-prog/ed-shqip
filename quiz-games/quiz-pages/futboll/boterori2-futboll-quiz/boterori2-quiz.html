@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../quiz-styles.css">
+    <title> Kuiz - Boterori 2 </title>
+</head>
+<body>
+    <center>
+    <h1>Kuiz - Boterori 2 </h1>
+    <div id="quiz-container">
+        <div id="question"> Cili lojtar ka bere me shume gola ne boteroret e futbollit?</div> <br>
+        <div id="alternatives">
+            <button id="alt1" class="btn" value="0" onclick="altClick(this)" 
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Ronaldo Fenomeni </button> 
+            <button id="alt2" class="btn" value="1" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Miroslav Klose </button> 
+            <button id="alt3" class="btn" value="0" onclick="altClick(this)"
+            onmouseover="mouseOver1(this)" onmouseout="mouseOut1(this)"> Pele </button> 
+        </div> <br>
+        <span id="corrAnswer"> Pergjigja e sakte: Miroslav Klose - me 16 gola gjithsej ne te gjitha boteroret ne te cilat ka marre pjese</span> <br>
+        <button class="next-btn btn" id="next1"> Next </button>
+    </div>
+
+    <button class="back" onclick="backHistory()"> < Kthehu </button> 
+
+    
+    </center>
+<script src="boterori2-script.js"></script>
+</body>
