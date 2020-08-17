@@ -3,7 +3,8 @@
 }
 
 body{
-    background-color: #28EAEA;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,152,1) 100%);
 }
 
 #header{
