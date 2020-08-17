@@ -59,8 +59,8 @@ h2{
 #quiz-menu{
     padding: 10px;
     margin: 12px;
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: 15px;
     right: 5px;
