@@ -19,6 +19,6 @@ function goToWorldCup2(){
 }
 
 function goToEuropeanCup1(){
-    window.open("europiani1-fuboll-quiz/europiani1-futboll-quiz.html", "_self");
+    window.open("europiani1-futboll-quiz/europiani1-futboll-quiz.html", "_self");
 }
 
