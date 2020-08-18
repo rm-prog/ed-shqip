@@ -61,7 +61,7 @@ const newQuestions = [
         correct: "Jugosllavi"
     },
     {
-        question: "Cili shtet nuk fituar ndonjehere nje europian?",
+        question: "Cili shtet nuk ka fituar ndonjehere nje europian?",
         alternatives: [
             { a: "Danimarka", correct: false},
             { b: "Cekosllovakia", correct: false},
@@ -158,6 +158,15 @@ const newQuestions = [
             { c: "Polonia", correct: false}
         ],
         correct: "Rusia"
+    },
+    {
+        question: "Cili lojtar doli golashenues i europianit 2012?",
+        alternatives: [
+            { a: "Mario Gomez", correct: false},
+            { b: "Fernando Torres", correct: true},
+            { c: "David Villa", correct: false}
+        ],
+        correct: "Fernando Torres - me 3 gola te shenuar"
     }
 ]
 
