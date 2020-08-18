@@ -10,7 +10,8 @@ body{
 #header{
     width: 400px;
     height: 100px;
-    background-color: #CEFDFB;
+    background: rgb(63,187,251);
+    background: radial-gradient(circle, rgba(63,187,251,1) 27%, rgba(242,255,78,1) 66%);
     font-size: 2.6rem;
     font-family: cursive;
     color:#090F39;

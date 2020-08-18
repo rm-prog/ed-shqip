@@ -3,7 +3,8 @@
 }
 
 body{
-    background-color: azure;
+    background: rgb(242,252,69);
+    background: linear-gradient(90deg, rgba(242,252,69,1) 0%, rgba(58,120,180,1) 45%, rgba(93,250,68,1) 99%);
     padding-bottom: 100px;
 }
 
