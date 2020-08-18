@@ -18,3 +18,7 @@ function goToWorldCup2(){
     window.open("boterori2-futboll-quiz/boterori2-quiz.html", "_self");
 }
 
+function goToEuropeanCup1(){
+    window.open("europiani1-fuboll-quiz/europiani1-futboll-quiz.html", "_self");
+}
+
