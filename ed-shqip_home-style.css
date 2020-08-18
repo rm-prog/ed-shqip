@@ -33,7 +33,7 @@ body{
     background: #CEEFEF;
     display: block;
     width: 350px;
-    height: 420px;
+    height: 520px;
     }
 
 h2{
@@ -99,6 +99,17 @@ h2{
 .yellowButton:hover{
     background-color: #EFF52F;
     background:linear-gradient(to bottom, #F2F73F 5%, #EFF52F 100%);
+}
+
+.purpleButton{
+    background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+    background-color:#c123de;
+    border-color: #c123de;
+}
+
+.purpleButton:hover{
+    background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
 }
 
 

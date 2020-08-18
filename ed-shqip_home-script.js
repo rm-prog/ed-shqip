@@ -14,3 +14,7 @@ function goToLogicGames(){
 function goToQuizzes(){
     window.open("quiz-games/quiz-games-home.html", "_self");
 }
+
+function goToFootballQuizzes(){
+    window.open("futboll/futboll-quiz.html", "_self");
+}
