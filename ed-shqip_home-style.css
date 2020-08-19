@@ -112,4 +112,10 @@ h2{
 	background-color:#a20dbd;
 }
 
+@media screen and (max-width: 330px){
+    #introCard{
+        width: 310px;
+    }
+}
+
 
