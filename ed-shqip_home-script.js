@@ -18,3 +18,7 @@ function goToQuizzes(){
 function goToFootballQuizzes(){
     window.open("futboll/futboll-quiz.html", "_self");
 }
+
+function goToWordGames(){
+    window.open("word-games/word-games-home.html", "_self");
+}

@@ -38,21 +38,21 @@ body{
 #quiz-menu{
     padding: 10px;
     margin: 12px;
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: 15px;
     right: 5px;
-    gap: 10px;
 }
 
 .btn{
     outline: none;
-    width: 510px;
-    height: 90px;
+    width: 400px;
+    height: 115px;
     border: 1.5px solid black;
     border-radius: 7px;
     padding-left: 10px;
+    margin: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.9rem;
     text-align: left;

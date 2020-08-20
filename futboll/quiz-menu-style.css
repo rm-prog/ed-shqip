@@ -95,3 +95,9 @@ body{
 .gray{
     background-color: gainsboro;
 }
+
+@media screen and (max-width: 600px){
+    .back{
+        display: none;
+    }
+}
