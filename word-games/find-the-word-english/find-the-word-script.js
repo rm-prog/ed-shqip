@@ -8,6 +8,12 @@ const labelForInput1 = document.getElementById("labelForInput");
 const answerInput = document.getElementById("answer-input");
 const submitButton1 = document.getElementById("submitButton");
 
+answerInput.addEventListener("keyup", function(event){
+    if(event.keyCode === 13){
+        submitButton1.click();
+    }
+})
+
 submitButton1.disabled = true;
 
 startButton1.addEventListener("click", startGame);
