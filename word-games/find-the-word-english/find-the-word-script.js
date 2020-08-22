@@ -109,7 +109,7 @@ const wordsArray = [
     },
     {
         letters: ["S", "L", "B", "C", "O", "U", "H", "O", "S"],
-        numberOfWords: 2,
+        numberOfWords: 3,
         correctWords:  [
             {
                 theWord: "SCHOOL",
@@ -120,6 +120,11 @@ const wordsArray = [
                 theWord: "BUS",
                 indexes: [2, 5, 8],
                 loopingVar: 3
+            },
+            {
+                theWord: "CLUB",
+                indexes: [4, 1, 5, 2],
+                loopingVar: 4
             }
         ]
     },
