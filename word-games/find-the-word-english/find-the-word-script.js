@@ -159,8 +159,96 @@ const wordsArray = [
                 loopingVar: 3
             }
         ]
+    },
+    {
+        letters: ["C", "M", "R", "L", "A", "O", "S", "S", "O"],
+        numberOfWords: 5,
+        correctWords:  [
+            {
+                theWord: "ROOM",
+                indexes: [2, 5, 8, 1],
+                loopingVar: 4
+            },
+            {
+                theWord: "CLASS",
+                indexes: [0, 3, 6, 7, 4],
+                loopingVar: 5
+            },
+            {
+                theWord: "CLASSROOM",
+                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                loopingVar: 9
+            },
+            {
+                theWord: "COLOR",
+                indexes: [0, 5, 8, 3, 2],
+                loopingVar: 5
+            },
+            {
+                theWord: "MASS",
+                indexes: [1, 4, 7, 6],
+                loopingVar: 4
+            }
+        ]
+    },
+    {
+        letters: ["A", "K", "E", "H", "S", "D", "H", "A", "N"],
+        numberOfWords: 3,
+        correctWords:  [
+            {
+                theWord: "HAND",
+                indexes: [6, 7, 8, 5],
+                loopingVar: 4
+            },
+            {
+                theWord: "SHAKE",
+                indexes: [4, 3, 0, 1, 2],
+                loopingVar: 5
+            },
+            {
+                theWord: "HANDSHAKE",
+                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                loopingVar: 9
+            },
+        ]
+    },
+    {
+        letters: ["M", "U", "S", "H", "O", "T", "M", "E", "R"],
+        numberOfWords: 2,
+        correctWords:  [
+            {
+                theWord: "HOT",
+                indexes: [3, 4, 5],
+                loopingVar: 3
+            },
+            {
+                theWord: "SUMMER",
+                indexes: [2, 1, 0, 6, 7, 8],
+                loopingVar: 6
+            }
+        ]
     }
 ];
+
+// Rendit rastesisht
+function shuffle(arra1) {
+    var ctr = arra1.length, temp, index;
+
+// While there are elements in the array
+    while (ctr > 0) {
+// Pick a random index
+        index = Math.floor(Math.random() * ctr);
+// Decrease ctr by 1
+        ctr--;
+// And swap the last element with it
+        temp = arra1[ctr];
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
+}
+
+shuffle(wordsArray);
 
 function startGame(){
     displayAnswer.removeChild(startButton1);
