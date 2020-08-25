@@ -1,4 +1,3 @@
-
 const centerDiv = document.getElementById("center-div");
 const displayAnswer = document.getElementById("display-answer");
 const startButton1 = document.getElementById("startButton");
@@ -9,6 +8,7 @@ const answerInput = document.getElementById("answer-input");
 const submitButton1 = document.getElementById("submitButton");
 const helpButton1 = document.getElementById("helpButton");
 
+
 answerInput.addEventListener("keyup", function(event){
     if(event.keyCode === 13){
         submitButton1.click();
@@ -16,7 +16,7 @@ answerInput.addEventListener("keyup", function(event){
 })
 
 submitButton1.disabled = true;
-helpButton1.disabled = false;
+helpButton1.disabled = true;
 
 startButton1.addEventListener("click", startGame);
 submitButton1.addEventListener("click", submitWord);
@@ -30,206 +30,186 @@ let helpsUsed = 0;
 
 const wordsArray = [
     {
-        letters: ["S", "U", "N", "F", "L", "O", "R", "E", "W"],
+        letters: ["G", "U", "N", "P", "W", "R", "O", "E", "D"],
         numberOfWords: 3,
         correctWords:  [
             {
-                theWord: "SUN",
+                theWord: "GUN",
                 indexes: [0, 1, 2],
                 loopingVar: 3
             },
             {
-                theWord: "FLOWER",
+                theWord: "POWDER",
                 indexes: [3, 4, 5, 6, 7, 8],
                 loopingVar: 6
             },
             {
-                theWord: "SUNFLOWER",
+                theWord: "GUNPOWDER",
                 indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
                 loopingVar: 9
             }
         ]
     },
     {
-        letters: ["B", "U", "T", "R", "E", "T", "F", "L", "Y"],
+        letters: ["B", "E", "G", "U", "L", "U", "B", "B", "M"],
         numberOfWords: 3,
         correctWords:  [
             {
-                theWord: "FLY",
-                indexes: [6, 7, 8],
-                loopingVar: 3
-            },
-            {
-                theWord: "BUTTER",
-                indexes: [0, 1, 2, 3, 4, 5],
-                loopingVar: 6
-            },
-            {
-                theWord: "BUTTERFLY",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
-            }
-        ]
-    },
-    {
-        letters: ["B", "L", "U", "B", "Y", "E", "E", "R", "R"],
-        numberOfWords: 4,
-        correctWords:  [
-            {
-                theWord: "BLUE",
-                indexes: [0, 1, 2, 5],
-                loopingVar: 4
-            },
-            {
-                theWord: "BYE",
-                indexes: [3, 4, 5],
-                loopingVar: 3
-            },
-            {
-                theWord: "BLUEBERRY",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
-            },
-            {
-                theWord: "BERRY",
-                indexes: [3, 4, 6, 7, 8],
-                loopingVar: 5
-            }
-        ]
-    },
-    {
-        letters: ["M", "L", "T", "O", "I", "H", "O", "N", "G"],
-        numberOfWords: 3,
-        correctWords:  [
-            {
-                theWord: "MOON",
-                indexes: [0, 3, 6, 7],
-                loopingVar: 4
-            },
-            {
-                theWord: "LIGHT",
-                indexes: [1, 4, 8, 5, 2],
-                loopingVar: 5
-            },
-            {
-                theWord: "MOONLIGHT",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
-            }
-        ]
-    },
-    {
-        letters: ["S", "L", "B", "C", "O", "U", "H", "O", "S"],
-        numberOfWords: 3,
-        correctWords:  [
-            {
-                theWord: "SCHOOL",
-                indexes: [0, 3, 6, 7, 4, 1],
-                loopingVar: 6
-            },
-            {
-                theWord: "BUS",
+                theWord: "GUM",
                 indexes: [2, 5, 8],
                 loopingVar: 3
             },
             {
-                theWord: "CLUB",
-                indexes: [4, 1, 5, 2],
-                loopingVar: 4
+                theWord: "BUBBLE",
+                indexes: [0, 3, 6, 7, 4, 1],
+                loopingVar: 6
+            },
+            {
+                theWord: "BUBBLEGUM",
+                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                loopingVar: 9
             }
         ]
     },
     {
-        letters: ["B", "E", "A", "A", "C", "H", "S", "N", "D"],
-        numberOfWords: 4,
+        letters: ["S", "F", "H", "H", "L", "S", "E", "L", "I"],
+        numberOfWords: 3,
         correctWords:  [
             {
-                theWord: "SAND",
-                indexes: [6, 3, 7, 8],
-                loopingVar: 4
-            },
-            {
-                theWord: "BEACH",
-                indexes: [0, 1, 2, 4, 5],
-                loopingVar: 5
-            },
-            {
-                theWord: "HEAD",
-                indexes: [5, 1, 2, 8],
-                loopingVar: 4
-            },
-            {
-                theWord: "BAN",
-                indexes: [0, 3, 7],
-                loopingVar: 3
-            }
-        ]
-    },
-    {
-        letters: ["C", "M", "R", "L", "A", "O", "S", "S", "O"],
-        numberOfWords: 5,
-        correctWords:  [
-            {
-                theWord: "ROOM",
-                indexes: [2, 5, 8, 1],
-                loopingVar: 4
-            },
-            {
-                theWord: "CLASS",
+                theWord: "SHELL",
                 indexes: [0, 3, 6, 7, 4],
                 loopingVar: 5
             },
             {
-                theWord: "CLASSROOM",
+                theWord: "FISH",
+                indexes: [1, 8, 5, 2],
+                loopingVar: 4
+            },
+            {
+                theWord: "SHELLFISH",
                 indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
                 loopingVar: 9
-            },
-            {
-                theWord: "COLOR",
-                indexes: [0, 5, 8, 3, 2],
-                loopingVar: 5
-            },
-            {
-                theWord: "MASS",
-                indexes: [1, 4, 7, 6],
-                loopingVar: 4
             }
         ]
     },
     {
-        letters: ["A", "K", "E", "H", "S", "D", "H", "A", "N"],
+        letters: ["F", "I", "R", "S", "K", "E", "R", "O", "W"],
         numberOfWords: 3,
         correctWords:  [
             {
-                theWord: "HAND",
-                indexes: [6, 7, 8, 5],
+                theWord: "FIRE",
+                indexes: [0, 1, 2, 5],
                 loopingVar: 4
             },
             {
-                theWord: "SHAKE",
-                indexes: [4, 3, 0, 1, 2],
+                theWord: "WORKS",
+                indexes: [8, 7, 6, 3, 4],
                 loopingVar: 5
             },
             {
-                theWord: "HANDSHAKE",
+                theWord: "FIREWORKS",
                 indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
                 loopingVar: 9
-            },
+            }
         ]
     },
     {
-        letters: ["M", "U", "S", "H", "O", "T", "M", "E", "R"],
+        letters: ["W", "A", "R", "O", "T", "E", "S", "D", "A"],
         numberOfWords: 2,
         correctWords:  [
             {
-                theWord: "HOT",
-                indexes: [3, 4, 5],
-                loopingVar: 3
+                theWord: "SODA",
+                indexes: [6, 3, 7, 8],
+                loopingVar: 4
             },
             {
-                theWord: "SUMMER",
-                indexes: [2, 1, 0, 6, 7, 8],
-                loopingVar: 6
+                theWord: "WATER",
+                indexes: [0, 1, 2, 4, 5],
+                loopingVar: 5
+            }
+        ]
+    },
+    {
+        letters: ["G", "L", "S", "H", "R", "S", "O", "U", "A"],
+        numberOfWords: 3,
+        correctWords:  [
+            {
+                theWord: "HOUR",
+                indexes: [3, 6, 7, 4],
+                loopingVar: 4
+            },
+            {
+                theWord: "GLASS",
+                indexes: [0, 1, 2, 5, 8],
+                loopingVar: 5
+            },
+            {
+                theWord: "HOURGLASS",
+                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                loopingVar: 9
+            }
+        ]
+    },
+    {
+        letters: ["B", "O", "O", "S", "T", "O", "Y", "R", "K"],
+        numberOfWords: 3,
+        correctWords:  [
+            {
+                theWord: "BOOK",
+                indexes: [0, 1, 2, 8],
+                loopingVar: 4
+            },
+            {
+                theWord: "STORY",
+                indexes: [3, 4, 5, 6, 7],
+                loopingVar: 5
+            },
+            {
+                theWord: "STORYBOOK",
+                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                loopingVar: 9
+            }
+        ]
+    },
+    {
+        letters: ["S", "P", "A", "I", "E", "C", "P", "H", "S"],
+        numberOfWords: 3,
+        correctWords:  [
+            {
+                theWord: "SHIP",
+                indexes: [8, 7, 3, 6],
+                loopingVar: 4
+            },
+            {
+                theWord: "SPACE",
+                indexes: [0, 1, 2, 5, 4],
+                loopingVar: 5
+            },
+            {
+                theWord: "SPACESHIP",
+                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                loopingVar: 9
+            }
+        ]
+    },
+    {
+        letters: ["S", "U", "P", "S", "A", "E", "T", "R", "R"],
+        numberOfWords: 3,
+        correctWords:  [
+            {
+                theWord: "STAR",
+                indexes: [3, 6, 4, 7],
+                loopingVar: 4
+            },
+            {
+                theWord: "SUPER",
+                indexes: [0, 1, 2, 3, 4],
+                loopingVar: 5
+            },
+            {
+                theWord: "SUPERSTAR",
+                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                loopingVar: 9
             }
         ]
     }
@@ -293,7 +273,7 @@ function submitWord(){
             centerDiv.removeChild(answerInput);
             centerDiv.removeChild(labelForInput1);
             centerDiv.removeChild(helpButton1);
-            displayAnswer.innerHTML = "Bravo! Arritet t'i gjenit te gjitha fjalet." + "<br>" + `Ndihma te perdorura ${helpsUsed}`;
+            displayAnswer.innerHTML = "Bravo! Arritet t'i gjenit te gjitha fjalet." + "<br>" + `Ndihma te perdorura: ${helpsUsed}`;
         } else{
             for(let i=0; i<9; i++){
                 tableCells[i].style.backgroundColor = "white";
