@@ -18,3 +18,7 @@ function goToFindTheWordEnglish1(){
 function goToFindTheWordEnglish2(){
     window.open("find-the-word-english2/find-the-word-english2.html", "_self");
 }
+
+function goToFindTheWordEnglish3(){
+    window.open("find-the-word-english3/find-the-word-english3.html", "_self");
+}
