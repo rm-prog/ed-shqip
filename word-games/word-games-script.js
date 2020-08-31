@@ -22,3 +22,7 @@ function goToFindTheWordEnglish2(){
 function goToFindTheWordEnglish3(){
     window.open("find-the-word-english3/find-the-word-english3.html", "_self");
 }
+
+function goToFindTheWordEnglish4(){
+    window.open("find-the-word-english4/find-the-word-english4.html", "_self");
+}

@@ -1,5 +1,6 @@
 const centerDiv = document.getElementById("center-div");
 const displayAnswer = document.getElementById("display-answer");
+const warningSpan = document.getElementById("warning-span");
 const startButton1 = document.getElementById("startButton");
 const wordContainer = document.getElementById("words-container");
 const tableCells = document.getElementsByTagName("td");
@@ -237,6 +238,7 @@ shuffle(wordsArray);
 
 function startGame(){
     displayAnswer.removeChild(startButton1);
+    displayAnswer.removeChild(warningSpan);
     submitButton1.disabled = false;
     helpButton1.disabled = false;
     for(let i=0; i<9; i++){
@@ -250,7 +252,11 @@ function submitWord(){
         if(answerInput.value.toUpperCase() === wordsArray[arrayIndex].correctWords[i].theWord){
             displayAnswer.innerHTML = "Sakte!";
             for(let j=0; j<wordsArray[arrayIndex].correctWords[i].loopingVar; j++){
+                if(tableCells[wordsArray[arrayIndex].correctWords[i].indexes[j]].value === "1"){
+                    break;
+                }
                 tableCells[wordsArray[arrayIndex].correctWords[i].indexes[j]].style.backgroundColor = "gray";
+                tableCells[wordsArray[arrayIndex].correctWords[i].indexes[j]].value = "1";
                 crushedCells++;
             }
             break;
@@ -265,7 +271,7 @@ function submitWord(){
     answerInput.value = "";
 
     if(crushedCells >= 9){
-        displayAnswer.innerHTML = "";
+        displayAnswer.innerHTML = "Sakte!";
         arrayIndex++;
         if(wordsArray[arrayIndex] === undefined){
             centerDiv.removeChild(wordContainer);
@@ -278,6 +284,7 @@ function submitWord(){
             for(let i=0; i<9; i++){
                 tableCells[i].style.backgroundColor = "white";
                 tableCells[i].innerHTML = wordsArray[arrayIndex].letters[i];
+                tableCells[i].value = "0";
             }
             helpButton1.disabled = false;
         }
@@ -286,8 +293,7 @@ function submitWord(){
 }
 
 function needHelp(){
-    answerInput.value = wordsArray[arrayIndex].correctWords[0].theWord;
-    submitButton1.click();
+    answerInput.value = wordsArray[arrayIndex].correctWords[Math.floor(Math.random() * (wordsArray[arrayIndex].numberOfWords - 1))].theWord;
     helpsUsed++;
     helpButton1.disabled = true;
 }

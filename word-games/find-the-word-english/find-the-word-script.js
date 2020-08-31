@@ -1,6 +1,7 @@
 
 const centerDiv = document.getElementById("center-div");
 const displayAnswer = document.getElementById("display-answer");
+const warningSpan = document.getElementById("warning-span");
 const startButton1 = document.getElementById("startButton");
 const wordContainer = document.getElementById("words-container");
 const tableCells = document.getElementsByTagName("td");
@@ -73,17 +74,12 @@ const wordsArray = [
     },
     {
         letters: ["B", "L", "U", "B", "Y", "E", "E", "R", "R"],
-        numberOfWords: 4,
+        numberOfWords: 3,
         correctWords:  [
             {
                 theWord: "BLUE",
                 indexes: [0, 1, 2, 5],
                 loopingVar: 4
-            },
-            {
-                theWord: "BYE",
-                indexes: [3, 4, 5],
-                loopingVar: 3
             },
             {
                 theWord: "BLUEBERRY",
@@ -120,7 +116,7 @@ const wordsArray = [
     },
     {
         letters: ["S", "L", "B", "C", "O", "U", "H", "O", "S"],
-        numberOfWords: 3,
+        numberOfWords: 2,
         correctWords:  [
             {
                 theWord: "SCHOOL",
@@ -131,17 +127,12 @@ const wordsArray = [
                 theWord: "BUS",
                 indexes: [2, 5, 8],
                 loopingVar: 3
-            },
-            {
-                theWord: "CLUB",
-                indexes: [4, 1, 5, 2],
-                loopingVar: 4
             }
         ]
     },
     {
         letters: ["B", "E", "A", "A", "C", "H", "S", "N", "D"],
-        numberOfWords: 4,
+        numberOfWords: 2,
         correctWords:  [
             {
                 theWord: "SAND",
@@ -152,22 +143,12 @@ const wordsArray = [
                 theWord: "BEACH",
                 indexes: [0, 1, 2, 4, 5],
                 loopingVar: 5
-            },
-            {
-                theWord: "HEAD",
-                indexes: [5, 1, 2, 8],
-                loopingVar: 4
-            },
-            {
-                theWord: "BAN",
-                indexes: [0, 3, 7],
-                loopingVar: 3
             }
         ]
     },
     {
         letters: ["C", "M", "R", "L", "A", "O", "S", "S", "O"],
-        numberOfWords: 5,
+        numberOfWords: 3,
         correctWords:  [
             {
                 theWord: "ROOM",
@@ -183,16 +164,6 @@ const wordsArray = [
                 theWord: "CLASSROOM",
                 indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
                 loopingVar: 9
-            },
-            {
-                theWord: "COLOR",
-                indexes: [0, 5, 8, 3, 2],
-                loopingVar: 5
-            },
-            {
-                theWord: "MASS",
-                indexes: [1, 4, 7, 6],
-                loopingVar: 4
             }
         ]
     },
@@ -257,6 +228,7 @@ shuffle(wordsArray);
 
 function startGame(){
     displayAnswer.removeChild(startButton1);
+    displayAnswer.removeChild(warningSpan);
     submitButton1.disabled = false;
     helpButton1.disabled = false;
     for(let i=0; i<9; i++){
@@ -270,7 +242,11 @@ function submitWord(){
         if(answerInput.value.toUpperCase() === wordsArray[arrayIndex].correctWords[i].theWord){
             displayAnswer.innerHTML = "Sakte!";
             for(let j=0; j<wordsArray[arrayIndex].correctWords[i].loopingVar; j++){
+                if(tableCells[wordsArray[arrayIndex].correctWords[i].indexes[j]].value === "1"){
+                    break;
+                }
                 tableCells[wordsArray[arrayIndex].correctWords[i].indexes[j]].style.backgroundColor = "gray";
+                tableCells[wordsArray[arrayIndex].correctWords[i].indexes[j]].value = "1";
                 crushedCells++;
             }
             break;
@@ -285,7 +261,7 @@ function submitWord(){
     answerInput.value = "";
 
     if(crushedCells >= 9){
-        displayAnswer.innerHTML = "";
+        displayAnswer.innerHTML = "Sakte!";
         arrayIndex++;
         if(wordsArray[arrayIndex] === undefined){
             centerDiv.removeChild(wordContainer);
@@ -298,6 +274,7 @@ function submitWord(){
             for(let i=0; i<9; i++){
                 tableCells[i].style.backgroundColor = "white";
                 tableCells[i].innerHTML = wordsArray[arrayIndex].letters[i];
+                tableCells[i].value = "0";
             }
             helpButton1.disabled = false;
         }
@@ -306,8 +283,7 @@ function submitWord(){
 }
 
 function needHelp(){
-    answerInput.value = wordsArray[arrayIndex].correctWords[0].theWord;
-    submitButton1.click();
+    answerInput.value = wordsArray[arrayIndex].correctWords[Math.floor(Math.random() * (wordsArray[arrayIndex].numberOfWords - 1))].theWord;
     helpsUsed++;
     helpButton1.disabled = true;
 }

@@ -28,6 +28,11 @@ body{
     margin: 0 auto;
 }
 
+#center-div{
+  position: relative;
+  bottom: 20px;
+}
+
 #startButton {
     box-shadow: inset 0px 39px 0px -24px #e67a73;
     background-color: #e4685d;
@@ -55,7 +60,7 @@ body{
     background-color: white;
     font-size: 1.2rem;
     padding: 2px;
-    width: 50px;
+    width: 100px;
     height: 35px;
     border: 2px black solid;
     border-collapse: collapse;

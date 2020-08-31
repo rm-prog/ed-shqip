@@ -31,186 +31,205 @@ let helpsUsed = 0;
 
 const wordsArray = [
     {
-        letters: ["L", "I", "F", "G", "E", "R", "U", "A", "D"],
-        numberOfWords: 3,
+        letters: ["S", "E", "E", "D", "T", "R", "E", "E", "W", "O", "R", "G", "L", "E", "A", "F"],
+        numberOfWords: 4,
         correctWords:  [
             {
-                theWord: "LIFE",
-                indexes: [0, 1, 2, 4],
+                theWord: "SEED",
+                indexes: [0, 1, 2, 3],
                 loopingVar: 4
             },
             {
-                theWord: "GUARD",
-                indexes: [3, 5, 6, 7, 8],
-                loopingVar: 5
-            },
-            {
-                theWord: "LIFEGUARD",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
-            }
-        ]
-    },
-    {
-        letters: ["B", "L", "I", "U", "T", "T", "G", "E", "L"],
-        numberOfWords: 2,
-        correctWords:  [
-            {
-                theWord: "BUG",
-                indexes: [0, 3, 6],
-                loopingVar: 3
-            },
-            {
-                theWord: "LITTLE",
-                indexes: [1, 2, 4, 7, 8, 3],
-                loopingVar: 6
-            }
-        ]
-    },
-    {
-        letters: ["S", "H", "T", "O", "N", "G", "M", "E", "I"],
-        numberOfWords: 3,
-        correctWords:  [
-            {
-                theWord: "SOME",
-                indexes: [0, 3, 6, 7],
+                theWord: "TREE",
+                indexes: [4, 5, 6, 7],
                 loopingVar: 4
             },
             {
-                theWord: "THING",
-                indexes: [2, 1, 8, 4, 5],
+                theWord: "GROW",
+                indexes: [8, 9, 10, 11],
+                loopingVar: 4
+            },
+            {
+                theWord: "LEAF",
+                indexes: [12, 13, 14, 15],
+                loopingVar: 4
+            }
+        ]
+    },
+    {
+        letters: ["H", "L", "S", "F", "O", "O", "V", "E", "P", "C", "E", "A", "E", "K", "I", "R"],
+        numberOfWords: 4,
+        correctWords:  [
+            {
+                theWord: "HOPE",
+                indexes: [0, 4, 8, 12],
+                loopingVar: 4
+            },
+            {
+                theWord: "LOVE",
+                indexes: [1, 5, 6, 10],
+                loopingVar: 4
+            },
+            {
+                theWord: "FEAR",
+                indexes: [3, 7, 11, 15],
+                loopingVar: 4
+            },
+            {
+                theWord: "SICK",
+                indexes: [2, 14, 9, 13],
+                loopingVar: 4
+            }
+        ]
+    },
+    {
+        letters: ["S", "O", "D", "A", "K", "L", "I", "M", "J", "U", "I", "C", "A", "E", "T", "E"],
+        numberOfWords: 4,
+        correctWords:  [
+            {
+                theWord: "SODA",
+                indexes: [0, 1, 2, 3],
+                loopingVar: 4
+            },
+            {
+                theWord: "MILK",
+                indexes: [4, 5, 6, 7],
+                loopingVar: 4
+            },
+            {
+                theWord: "JUICE",
+                indexes: [8, 9, 10, 11, 15],
                 loopingVar: 5
             },
             {
-                theWord: "SOMETHING",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
+                theWord: "TEA",
+                indexes: [14, 13, 12],
+                loopingVar: 3
             }
         ]
     },
     {
-        letters: ["N", "U", "M", "O", "U", "T", "R", "E", "B"],
-        numberOfWords: 3,
+        letters: ["F", "A", "S", "S", "D", "R", "T", "L", "R", "U", "N", "O", "I", "V", "E", "W"],
+        numberOfWords: 4,
         correctWords:  [
             {
-                theWord: "OUT",
-                indexes: [3, 4, 5],
+                theWord: "FAST",
+                indexes: [0, 1, 2, 6],
+                loopingVar: 4
+            },
+            {
+                theWord: "SLOW",
+                indexes: [3, 7, 11, 15],
+                loopingVar: 4
+            },
+            {
+                theWord: "DRIVE",
+                indexes: [4, 5, 12, 13, 14],
+                loopingVar: 5
+            },
+            {
+                theWord: "RUN",
+                indexes: [8, 9, 10],
+                loopingVar: 3
+            }
+        ]
+    },
+    {
+        letters: ["H", "S", "I", "F", "S", "E", "A", "R", "R", "I", "V", "E", "C", "R", "A", "B"],
+        numberOfWords: 4,
+        correctWords:  [
+            {
+                theWord: "FISH",
+                indexes: [0, 1, 2, 3],
+                loopingVar: 4
+            },
+            {
+                theWord: "SEA",
+                indexes: [4, 5, 6],
                 loopingVar: 3
             },
             {
-                theWord: "NUMBER",
-                indexes: [0, 1, 2, 6, 7, 8],
-                loopingVar: 6
+                theWord: "RIVER",
+                indexes: [8, 9, 10, 11, 7],
+                loopingVar: 5
             },
             {
-                theWord: "OUTNUMBER",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
+                theWord: "CRAB",
+                indexes: [12, 13, 14, 15],
+                loopingVar: 4
             }
         ]
     },
     {
-        letters: ["O", "N", "S", "W", "B", "A", "D", "R", "O"],
+        letters: ["U", "A", "R", "S", "M", "L", "A", "N", "B", "L", "I", "O", "R", "E", "N", "W"],
         numberOfWords: 3,
         correctWords:  [
+            {
+                theWord: "RAIN",
+                indexes: [2, 6, 10, 14],
+                loopingVar: 4
+            },
             {
                 theWord: "SNOW",
-                indexes: [0, 1, 2, 3],
+                indexes: [3, 7, 11, 15],
                 loopingVar: 4
             },
             {
-                theWord: "BOARD",
-                indexes: [4, 5, 6, 7, 8],
-                loopingVar: 5
-            },
-            {
-                theWord: "SNOWBOARD",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
+                theWord: "UMBRELLA",
+                indexes: [0, 1, 4, 5, 8, 9, 12, 13],
+                loopingVar: 8
             }
         ]
     },
     {
-        letters: ["T", "A", "R", "S", "L", "G", "T", "H", "I"],
-        numberOfWords: 3,
+        letters: ["P", "I", "L", "O", "S", "K", "Y", "T", "A", "I", "R", "P", "E", "A", "N", "L"],
+        numberOfWords: 5,
         correctWords:  [
             {
-                theWord: "STAR",
-                indexes: [0, 1, 2, 3],
-                loopingVar: 4
-            },
-            {
-                theWord: "LIGHT",
-                indexes: [4, 5, 6, 7, 8],
+                theWord: "PILOT",
+                indexes: [0, 1, 2, 3, 7],
                 loopingVar: 5
             },
             {
-                theWord: "STARLIGHT",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
-            }
-        ]
-    },
-    {
-        letters: ["S", "T", "O", "L", "E", "N", "L", "A", "W"],
-        numberOfWords: 3,
-        correctWords:  [
-            {
-                theWord: "WALL",
-                indexes: [8, 7, 6, 3],
-                loopingVar: 4
-            },
-            {
-                theWord: "STONE",
-                indexes: [0, 1, 2, 4, 5],
-                loopingVar: 5
-            },
-            {
-                theWord: "STONEWALL",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
-            }
-        ]
-    },
-    {
-        letters: ["F", "A", "E", "H", "R", "M", "O", "U", "S"],
-        numberOfWords: 3,
-        correctWords:  [
-            {
-                theWord: "FARM",
-                indexes: [0, 1, 4, 5],
-                loopingVar: 4
-            },
-            {
-                theWord: "HOUSE",
-                indexes: [2, 3, 6, 7, 8],
-                loopingVar: 5
-            },
-            {
-                theWord: "FARMHOUSE",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
-            }
-        ]
-    },
-    {
-        letters: ["F", "I", "P", "G", "N", "I", "E", "R", "T"],
-        numberOfWords: 3,
-        correctWords:  [
-            {
-                theWord: "TIP",
-                indexes: [8, 5, 2],
+                theWord: "SKY",
+                indexes: [4, 5, 6],
                 loopingVar: 3
             },
             {
-                theWord: "FINGER",
-                indexes: [0, 1, 3, 4, 6, 7],
+                theWord: "AIR",
+                indexes: [8, 9, 10],
+                loopingVar: 3
+            },
+            {
+                theWord: "PLANE",
+                indexes: [11, 15, 14, 13, 12],
+                loopingVar: 5
+            },
+            {
+                theWord: "AIRPLANE",
+                indexes: [8, 9, 10, 11, 12, 13, 14, 15],
+                loopingVar: 8
+            }
+        ]
+    },
+    {
+        letters: ["P", "Y", "E", "L", "I", "P", "W", "L", "N", "U", "R", "O", "K", "E", "L", "P"],
+        numberOfWords: 3,
+        correctWords:  [
+            {
+                theWord: "PINK",
+                indexes: [0, 4, 8, 12],
+                loopingVar: 4
+            },
+            {
+                theWord: "YELLOW",
+                indexes: [1, 2, 3, 7, 11, 6],
                 loopingVar: 6
             },
             {
-                theWord: "FINGERTIP",
-                indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-                loopingVar: 9
+                theWord: "PURPLE",
+                indexes: [5, 9, 10, 15, 14, 13],
+                loopingVar: 6   
             }
         ]
     }
@@ -241,7 +260,7 @@ function startGame(){
     displayAnswer.removeChild(warningSpan);
     submitButton1.disabled = false;
     helpButton1.disabled = false;
-    for(let i=0; i<9; i++){
+    for(let i=0; i<16; i++){
         tableCells[i].innerHTML = wordsArray[0].letters[i];
     }
     answerInput.value = "";
@@ -270,7 +289,7 @@ function submitWord(){
 
     answerInput.value = "";
 
-    if(crushedCells >= 9){
+    if(crushedCells >= 16){
         displayAnswer.innerHTML = "Sakte!";
         arrayIndex++;
         if(wordsArray[arrayIndex] === undefined){
@@ -281,7 +300,7 @@ function submitWord(){
             centerDiv.removeChild(helpButton1);
             displayAnswer.innerHTML = "Bravo! Arritet t'i gjenit te gjitha fjalet." + "<br>" + `Ndihma te perdorura: ${helpsUsed}`;
         } else{
-            for(let i=0; i<9; i++){
+            for(let i=0; i<16; i++){
                 tableCells[i].style.backgroundColor = "white";
                 tableCells[i].innerHTML = wordsArray[arrayIndex].letters[i];
                 tableCells[i].value = "0";
