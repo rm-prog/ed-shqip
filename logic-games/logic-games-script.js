@@ -21,3 +21,7 @@ function goToTapTheDifferentButton(){
 function goToCorrectOrNot(){
     window.open("games/correct-or-not-game/correct-or-not-game.html", "_self");
 }
+
+function goToFromLightToDark(){
+    window.open("games/from-light-to-dark-game/from-light-to-dark-game.html", "_self");
+}
