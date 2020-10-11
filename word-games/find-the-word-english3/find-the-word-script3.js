@@ -62,7 +62,7 @@ const wordsArray = [
             },
             {
                 theWord: "LITTLE",
-                indexes: [1, 2, 4, 7, 8, 3],
+                indexes: [1, 2, 4, 7, 8, 5],
                 loopingVar: 6
             }
         ]
