@@ -26,3 +26,7 @@ function goToFindTheWordEnglish3(){
 function goToFindTheWordEnglish4(){
     window.open("find-the-word-english4/find-the-word-english4.html", "_self");
 }
+
+function goToFindTheWordEnglish5(){
+    window.open("find-the-word-english5/find-the-word-english5.html", "_self");
+}
