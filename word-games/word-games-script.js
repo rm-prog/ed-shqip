@@ -30,3 +30,7 @@ function goToFindTheWordEnglish4(){
 function goToFindTheWordEnglish5(){
     window.open("find-the-word-english5/find-the-word-english5.html", "_self");
 }
+
+function goToFindTheWordEnglish6(){
+    window.open("find-the-word-english6/find-the-word-english6.html", "_self");
+}
