@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="continue-the-sequence-style.css" />
+  </head>
+
+  <body>
+    <div id="heading"> Vazhdo vargun e numrave </div>
+    <br />
+    <br />
+    <center id="center-div">
+      <button id="startButton">Filloni lojen</button> <br>
+
+      <div id="number-order"> </div> 
+      <br>
+      <br>
+
+      <label id="input-label" for="output-value">?=</label>
+            <input id="output-value" readonly>
+            <br>
+            <br>
+
+            <div id="calculator-container">
+                <div class="grid-item" onclick="numberClick(1)">1</div>
+                <div class="grid-item largePadding" onclick="numberClick(2)">2</div>
+                <div class="grid-item" onclick="numberClick(3)">3</div>  
+                <div class="grid-item" onclick="numberClick(4)">4</div>
+                <div class="grid-item largePadding" onclick="numberClick(5)">5</div>
+                <div class="grid-item" onclick="numberClick(6)">6</div>  
+                <div class="grid-item largePadding" onclick="numberClick(7)">7</div>
+                <div class="grid-item" onclick="numberClick(8)">8</div>
+                <div class="grid-item" onclick="numberClick(9)">9</div>
+                <div class="grid-item red" onclick="deleteNumbers()">C</div>
+                <div class="grid-item" onclick="numberClick(0)" value="0">0</div>
+                <div class="grid-item enter" id="enter-button">Enter</div>
+            </div>
+
+        </center>
+
+    <script src="continue-the-sequence-script.js"></script>

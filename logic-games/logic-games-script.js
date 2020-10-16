@@ -25,3 +25,7 @@ function goToCorrectOrNot(){
 function goToFromLightToDark(){
     window.open("games/from-light-to-dark-game/from-light-to-dark-game.html", "_self");
 }
+
+function goToContinueTheSequence(){
+    window.open("games/continue-the-sequence-game/continue-the-sequence-game.html", "_self");
+}
