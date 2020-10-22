@@ -29,3 +29,7 @@ function goToFromLightToDark(){
 function goToContinueTheSequence(){
     window.open("games/continue-the-sequence-game/continue-the-sequence-game.html", "_self");
 }
+
+function goToMixTheColors(){
+    window.open("games/mix-the-colors-game/mix-the-colors-game.html", "_self");
+}
