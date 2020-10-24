@@ -33,3 +33,7 @@ function goToContinueTheSequence(){
 function goToMixTheColors(){
     window.open("games/mix-the-colors-game/mix-the-colors-game.html", "_self");
 }
+
+function goToMemoriseTheNumbers(){
+    window.open("games/memorise-the-numbers-game/memorise-the-numbers-game.html", "_self");
+}
