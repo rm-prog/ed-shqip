@@ -42,8 +42,38 @@ const numbersOrder = [
     {
         theNumbers: ["9", "8", "7", "6", "5", "4", "3", "2", "1"],
         countdownOrder: [8, 7, 6, 5, 4, 3, 2, 1, 0]
+    },
+    {
+        theNumbers: ["1", "4", "6", "3", "5", "7", "2", "8", "9"],
+        countdownOrder: [0, 6, 3, 1, 4, 2, 5, 7, 8]
+    },
+    {
+        theNumbers: ["2", "4", "5", "1", "3", "6", "9", "8", "7"],
+        countdownOrder: [3, 0, 4, 1, 2, 5, 8, 7, 6]
     }
 ];
+
+// Rendit rastesisht
+function shuffle(arra1) {
+    var ctr = arra1.length,
+      temp,
+      index;
+  
+    // While there are elements in the array
+    while (ctr > 0) {
+      // Pick a random index
+      index = Math.floor(Math.random() * ctr);
+      // Decrease ctr by 1
+      ctr--;
+      // And swap the last element with it
+      temp = arra1[ctr];
+      arra1[ctr] = arra1[index];
+      arra1[index] = temp;
+    }
+    return arra1;
+  }
+
+  shuffle(numbersOrder);
 
 function startGame(){
     numberIndex = 1;
@@ -56,8 +86,8 @@ function startGame(){
         timeCounter = setInterval(myTimer, 1000);
     } else{
         calculatorContainer.style.display = "none";
-        answerDiv.innerHTML = `Raunde te fituara: ${solvedExercises} ${'<br>'}
-                                Raunde te humbura: ${unsolvedExercises}`;
+        answerDiv.innerHTML = `Bravo kaluat te gjitha raundet ${'<br>'}
+                                 me ${unsolvedExercises} gabime`;
     }
 }
 
@@ -89,28 +119,16 @@ function numberClick(btn){
             solvedExercises++;
             startButton1.disabled = false;
             answerDiv.innerHTML = "Bravo!! Vazhdoni me nivelin tjeter";
+        } else{
+            answerDiv.innerHTML = "Sakte!! Vazhdoni.";
         }
     } else{
         if(numberRevealIndex != 0){
             return 0;
         }
-        numberIndex = 1;
-        numberRevealIndex = 1;
         unsolvedExercises++;
         answerDiv.innerHTML = "Gabim!!";
-        for(let i=0; i<9; i++){
-            numberDivs[i].innerHTML = "";
-            numberDivs[i].value = "";
-        }
-        wrongAnswerTimeout = setTimeout(wrongAnswer, 1500);
-        startButton1.disabled = false;
     }
-}
-
-function wrongAnswer(){
-    calculatorContainer.style.display = "none";
-    answerDiv.innerHTML = "Vazhdoni me raundin tjeter";
-    clearTimeout(wrongAnswerTimeout);
 }
 
 
