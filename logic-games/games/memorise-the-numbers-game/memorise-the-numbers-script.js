@@ -20,12 +20,12 @@ let numberRevealIndex = 0;
 
 const numbersOrder = [
     {
-        theNumbers: ["1", "2", "3", "6", "5", "4", "7", "8", "9"],
-        countdownOrder: [0, 1, 2, 5, 4, 3, 6, 7, 8]
+        theNumbers: ["1", "3", "2", "5", "4", "6", "7", "8", "9"],
+        countdownOrder: [0, 2, 1, 4, 3, 5, 6, 7, 8]
     },
     {
-        theNumbers: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-        countdownOrder: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+        theNumbers: ["3", "2", "1", "4", "5", "6", "8", "7", "9"],
+        countdownOrder: [2, 1, 0, 3, 4, 5, 7, 6, 8]
     },
     {
         theNumbers: ["1", "4", "7", "2", "5", "8", "3", "6", "9"],
@@ -40,8 +40,8 @@ const numbersOrder = [
         countdownOrder: [6, 7, 8, 3, 4, 5, 2, 1, 0]
     },
     {
-        theNumbers: ["9", "8", "7", "6", "5", "4", "3", "2", "1"],
-        countdownOrder: [8, 7, 6, 5, 4, 3, 2, 1, 0]
+        theNumbers: ["8", "9", "7", "4", "5", "6", "2", "1", "3"],
+        countdownOrder: [7, 6, 8, 3, 4, 5, 2, 0, 1]
     },
     {
         theNumbers: ["1", "4", "6", "3", "5", "7", "2", "8", "9"],
