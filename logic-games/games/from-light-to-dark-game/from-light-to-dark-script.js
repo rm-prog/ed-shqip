@@ -15,7 +15,7 @@ let incorrectClicks = 0;
 
 let colorOrder = 0;
 
-let seconds = 12;
+let seconds = 16;
 
 let arrayIndex = 0;
 
@@ -98,19 +98,19 @@ function shuffle(arra1) {
     seconds--;
     timeDisplay.innerHTML = `${seconds} sekonda`;
     if(seconds === 0){
-        seconds = 12;
+        seconds = 16;
         clearInterval(timeInterval);
         startButton.disabled = false;
         if(colorsArray[arrayIndex] != undefined){
             if(colorsArray[arrayIndex].orderDirection === "light to dark"){
-                answerDisplay.innerHTML = `Koha mbaroi! ${'<br>'}Tani shtypni ngjyrat nga me e hapura tek me e mbyllura`;
+                answerDisplay.innerHTML = `Koha mbaroi! ${'<br>'}!!Tani shtypni ngjyrat nga me e hapura tek me e mbyllura!!`;
                 answerDisplay.style.color = "black";
                 headerDiv.innerHTML = "Shtypni ngjyrat nga me e hapura tek me e mbyllura";
                 headerDiv.style.color = "blue";
             } else{
-                answerDisplay.innerHTML = "Tani shtypni ngjyrat nga e mbyllura tek me e hapura"
+                answerDisplay.innerHTML = "!!Tani shtypni ngjyrat nga e mbyllura tek me e hapura!!"
                 headerDiv.style.color = "black";
-                headerDiv.innerHTML = "Tani shtypni ngjyrat nga me e mbyllura tek me e hapura";
+                headerDiv.innerHTML = "!!Tani shtypni ngjyrat nga me e mbyllura tek me e hapura!!";
             }
         } else{
             answerDisplay.style.color = "black";
@@ -164,20 +164,20 @@ function btnClick(btn){
             }
             correctClicks++;
             clearInterval(timeInterval);
-            seconds = 12;
+            seconds = 16;
             startButton.disabled = false;
             if(colorsArray[arrayIndex] != undefined){
                 if(colorsArray[arrayIndex].orderDirection === "light to dark"){
-                    answerDisplay.innerHTML = "Sapo kaluat kete raund! Tani shtypni ngjyrat nga me e hapura tek me e mbyllura";
+                    answerDisplay.innerHTML = "Bravo! !!Tani shtypni ngjyrat nga me e hapura tek me e mbyllura!!";
                     headerDiv.innerHTML = "Shtypni ngjyrat nga me e hapura tek me e mbyllura";
                     headerDiv.style.color = "blue";
                 } else{
-                    answerDisplay.innerHTML = "Tani shtypni ngjyrat nga e mbyllura tek me e hapura"
+                    answerDisplay.innerHTML = "!!Tani shtypni ngjyrat nga e mbyllura tek me e hapura!!"
                     headerDiv.style.color = "green";
-                    headerDiv.innerHTML = "Tani shtypni ngjyrat nga e mbyllura tek me e hapura";
+                    headerDiv.innerHTML = "!!Tani shtypni ngjyrat nga e mbyllura tek me e hapura!!";
                 }
             } else{
-                answerDisplay.innerHTML = "Sapo kaluat kete raund! Tani kaloni ne raundin tjeter."
+                answerDisplay.innerHTML = "Bravo! Tani kaloni ne raundin tjeter."
             }
         }
     } else{

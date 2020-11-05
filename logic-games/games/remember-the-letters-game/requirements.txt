@@ -1,0 +1,6 @@
+A game where you remember the letters written
+
+1. Start Function
+2. SetTimeout when the letters dissapear
+3. SetInterval how much times has the player
+4. User submits answer

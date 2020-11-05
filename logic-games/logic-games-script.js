@@ -37,3 +37,7 @@ function goToMixTheColors(){
 function goToMemoriseTheNumbers(){
     window.open("games/memorise-the-numbers-game/memorise-the-numbers-game.html", "_self");
 }
+
+function goToRememberTheLetters(){
+    window.open("games/remember-the-letters-game/remember-the-letters-game.html", "_self");
+}
