@@ -23,7 +23,7 @@ function startGame(){
     if(levelsAndLetters.theLevels[levelsAndLetters.levelIndex] != undefined){
         lettersContainer.innerHTML = `Mbaj mend -> ${levelsAndLetters.theLevels[levelsAndLetters.levelIndex]}`;
         levelsAndLetters.hideLettersTimeout = setTimeout(startCountdown, 4000);
-        levelsAndLetters.seconds = levelsAndLetters.theLevels[levelsAndLetters.levelIndex].length+1;
+        levelsAndLetters.seconds = levelsAndLetters.theLevels[levelsAndLetters.levelIndex].length+2;
     } else{
         lettersContainer.style.display = "none";
         startButton1.style.display = "none";
@@ -55,6 +55,7 @@ function countDown(){
         clearInterval(levelsAndLetters.exerciseCountdown);
         levelsAndLetters.incorrectAnswers++;
         lettersContainer.innerHTML = "";
+        playersGuess.value = "";
         playersGuess.disabled = true;
         startButton1.disabled = false;
     }
