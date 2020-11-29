@@ -81,7 +81,7 @@ function startGame(){
     startButton1.innerHTML = "Next";
     startButton1.disabled = true;
     exerciseIndex++;
-    answerDiv.innerHTML = "Memorizoni rradhen e numrave dhe pastaj shtypni kutite sipas rradhes";
+    answerDiv.innerHTML = "Mbani mend rradhen e numrave dhe pastaj shtypni kutite sipas rradhes";
     if(numbersOrder[exerciseIndex] != undefined){
         timeCounter = setInterval(myTimer, 1000);
     } else{
