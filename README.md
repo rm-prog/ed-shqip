@@ -1,2 +1,2 @@
 # ed-shqip
-webpage with fun and educational games
+webpage with fun games
