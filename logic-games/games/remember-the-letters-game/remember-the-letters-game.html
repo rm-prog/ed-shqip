@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0" />
         <link rel="stylesheet" type="text/css" href="remember-the-letters-style.css" />
+        <link rel="stylesheet" type="text/css" href="../../../Styles/button-styles.css">
     </head>
     <body>
         <div id="header"> Mbani mend shkronjat </div>
@@ -15,12 +16,14 @@
             <div id="time-display"></div> <br> <br>
             <div id="letters-container"></div> <br> <br>
 
-           <label for="players-guess"> Shkruaji ketu shkronjat:</label>  <input type="text" id="players-guess">
-
+           <label for="players-guess"> Shkruaji ketu shkronjat:</label>  <input type="text" id="players-guess"> <br>
+           <button class="back" onclick="backHistory()"> &lt; Kthehu </button> <br>
         </center>
 
 
 
-        <script src="remember-the-letters-script.js"></script>
+        <script src="remember-the-letters-script.js"></script>                       
+<script src="../../../Scripts/history-controls.js"></script>
+<script src="../../../Scripts/button-controls.js"></script>
     </body>
 </html>

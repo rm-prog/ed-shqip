@@ -15,17 +15,8 @@ center{
     top: 40px;
 }
 
-.back{
-    width: 120px;
-    height: 50px;
-    padding: 3px;
-    font-size: 1.4rem;
-    color: black;
-    font-weight: 200;
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
+
+
 
 #quiz-container{
     width: 340px;

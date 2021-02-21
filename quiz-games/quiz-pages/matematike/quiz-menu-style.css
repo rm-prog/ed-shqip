@@ -6,14 +6,8 @@ body{
     background: rgb(63,240,251);
     background: radial-gradient(circle, rgba(63,240,251,1) 0%, rgba(214,252,70,1) 100%);
 }
-.back{
-    width: 120px;
-    height: 50px;
-    padding: 3px;
-    font-size: 1.4rem;
-    color: black;
-    font-weight: 200;
-}
+
+
 
 #header{
     width: 450px;

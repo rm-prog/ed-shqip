@@ -6,9 +6,7 @@ function btnMouseOut(e){
     e.style.borderWidth = "1.5px";
 }
 
-function backHistory(){
-    window.history.back();
-}
+
 
 function goToElementSymbols(){
     window.open("element-symbols-kimi-quiz/element-symbols-quiz.html", "_self");

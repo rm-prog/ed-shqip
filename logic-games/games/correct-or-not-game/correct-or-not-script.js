@@ -192,9 +192,7 @@ function sakteButtonClick(){
     seconds = 0;
 }
 
-function backHistory(){
-    window.history.back();
-}
+
 
 function reloadPage(){
     window.location.reload();

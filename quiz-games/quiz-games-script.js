@@ -7,9 +7,7 @@ function btnMouseOut(e){
     e.style.borderWidth = "1.5px";
 }
 
-function backHistory(){
-    window.history.back();
-}
+
 
 function goToGeo(){
     window.open("quiz-pages/geo/geo-quiz.html", "_self");

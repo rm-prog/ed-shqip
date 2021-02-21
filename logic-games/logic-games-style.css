@@ -27,17 +27,8 @@ body{
     z-index: 1;
 }
 
-.back{
-    width: 120px;
-    height: 50px;
-    padding: 3px;
-    font-size: 1.4rem;
-    color: black;
-    font-weight: 200;
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
+
+
 
 #games-menu{
     padding: 10px;
@@ -59,6 +50,10 @@ body{
     margin: 5px;
     border-radius: 15px;
   }
+
+.card:hover{
+    opacity: 0.6;
+}
 
   .long{
       height: 345px;

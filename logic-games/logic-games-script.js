@@ -1,7 +1,5 @@
 
-function backHistory(){
-    window.history.back();
-}
+
 function goToFindTheNumber(){
     window.open("games/find-the-number-game/find-the-number-game.html", "_self");
 }

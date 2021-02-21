@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="quiz-menu-style.css">
+    <link rel="stylesheet" type="text/css" href="../../../Styles/button-styles.css">
     <title> Kuiz-Shqip: Kuize-Fizik</title>
 </head>
 <body>
@@ -10,7 +11,8 @@
         Kuize - Fizik
     </div> <br> <br>
 
-    <button class="back" onclick="backHistory()"> < Kthehu </button> <br>
+    <button class="back" onclick="backHistory()"> &lt;
+Kthehu </button> <br>
     <div id="quiz-menu">
         <button class="btn yellow" onmouseover="btnMouseOv(this)" onmouseout="btnMouseOut(this)"
         onclick="goToForcesAndMovement()"> Kuiz - Forcat dhe levizja</button> 
@@ -31,6 +33,8 @@
         onclick="goToThermalProperties()"> Kuize - Vetite termike te lendes</button>
     </div>
 
-<script src="script_quiz-fizik.js"></script>
+<script src="script_quiz-fizik.js"></script>                       
+<script src="../../../Scripts/history-controls.js"></script>
+<script src="../../../Scripts/button-controls.js"></script>
 </body>
 </html>

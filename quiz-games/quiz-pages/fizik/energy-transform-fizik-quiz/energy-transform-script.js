@@ -17,18 +17,6 @@ let quesNumber = -1;
 let numOfRightAnswers = 0;
 let numOfWrongAnswers = 0;
 
-function backHistory(){
-    window.history.back();
-}
-
-function mouseOver1(btn){
-    btn.style.borderWidth = "3px";
-}
-
-function mouseOut1(btn){
-    btn.style.borderWidth = "1px";
-}
-
 
 
 function altClick(b){

@@ -6,9 +6,7 @@ function btnMouseOut(e){
     e.style.borderWidth = "1.5px";
 }
 
-function backHistory(){
-    window.history.back();
-}
+
 
 function goToThyesat1(){
     window.open("thyesa1-mat-quiz/thyesa1-quiz.html", "_self");

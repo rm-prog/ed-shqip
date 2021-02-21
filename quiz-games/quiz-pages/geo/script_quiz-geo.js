@@ -6,9 +6,7 @@ function btnMouseOut(e){
     e.style.borderWidth = "1.5px";
 }
 
-function backHistory(){
-    window.history.back();
-}
+
 
 function goToEurope(){
     window.open("europa-geo-quiz/shtete-europe-geo-quiz.html", "_self");

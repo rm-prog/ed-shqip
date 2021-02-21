@@ -6,9 +6,7 @@ function btnMouseOut(e){
     e.style.borderWidth = "1.5px";
 }
 
-function backHistory(){
-    window.history.back();
-}
+
 
 function goToWW1(){
     window.open("ww1-history-quiz/ww1-quiz.html", "_self");
