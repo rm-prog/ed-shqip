@@ -103,6 +103,7 @@ function shuffle(arra1) {
             clearInterval(timeCounter);
             timeDisplay.innerHTML += `${"<br>"}Klikime te sakta: ${correctClicks} ${"<br>"} Klikime te gabuara: ${incorrectClicks}`;
             const reloadPageButton = document.createElement("button");
+            reloadPageButton.style.margin = "40px";
             centerDiv.appendChild(reloadPageButton);
             reloadPageButton.addEventListener("click", reloadPage);
             reloadPageButton.innerHTML = "Rinis lojen";

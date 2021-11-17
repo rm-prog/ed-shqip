@@ -44,6 +44,7 @@ function startGame() {
     inputLabel.style.display = "none";
     startButton1.style.display = "none";
     const reloadPageButton = document.createElement("button");
+    reloadPageButton.style.margin = "40px";
       centerDiv.appendChild(reloadPageButton);
       reloadPageButton.addEventListener("click", reloadPage);
       reloadPageButton.innerHTML = "Rinis lojen";

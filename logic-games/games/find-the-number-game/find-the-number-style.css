@@ -41,7 +41,6 @@ body {
 }
 #startButton:active {
   position: relative;
-  top: 1px;
 }
 #time-display {
   font-size: 1.3rem;
