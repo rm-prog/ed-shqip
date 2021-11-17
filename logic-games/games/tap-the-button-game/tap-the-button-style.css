@@ -21,11 +21,6 @@
     text-align: center;
   }
   
-  
-
-  #startButton:active {
-    position: relative;
-  }
   #time-display {
     font-size: 1.3rem;
   }
