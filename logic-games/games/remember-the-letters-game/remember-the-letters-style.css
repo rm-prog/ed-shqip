@@ -27,10 +27,7 @@ body{
 }
 
 
-#startButton:active {
-	position:relative;
-	top:1px;
-}
+
 
 label{
     font-size: 1.2rem;
