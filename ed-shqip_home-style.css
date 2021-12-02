@@ -112,6 +112,23 @@ h2{
 	background-color:#a20dbd;
 }
 
+.redText {
+    color: red;
+}
+
+.footer {
+    background: #CEEFEF;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.4rem;
+    margin: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    border: 1px black solid;
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+}
+
 @media screen and (max-width: 330px){
     #introCard{
         width: 310px;

@@ -32,3 +32,7 @@ function goToFindTheWordEnglish5(){
 function goToFindTheWordEnglish6(){
     window.open("find-the-word-english6/find-the-word-english6.html", "_self");
 }
+
+function goToHangmanEnglish(){
+    window.open("hangman-english/hangman-english.html", "_self");
+}

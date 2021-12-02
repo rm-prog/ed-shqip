@@ -98,6 +98,14 @@ h2{
     background-color: orange;
 }
 
+.white {
+    background-color: white;
+}
+
+.redText {
+    color: red;
+}
+
 @media screen and (max-width: 600px){
     .back{
         display: none;

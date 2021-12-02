@@ -26,9 +26,6 @@ body{
     font-size: 1.3rem;
 }
 
-
-
-
 .tftable{
     display: inline-block;
     border-collapse: collapse;
@@ -84,9 +81,6 @@ td{
     padding: 8px;
     color: green;
 }
-
-
-
 
 @media screen and (max-width: 600px){
     .back{
