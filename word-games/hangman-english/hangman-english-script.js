@@ -166,16 +166,18 @@ window.onload = function () {
       
     // Play
     play = function () {
-      words = ["television",
-      "attitude",
-      "product",
+      words = [
+      "lemonade",
+      "beach",
+      "kiosk",
       "newspaper",
       "homework",
-      "connection",
+      "sphinx",
       "shopping",
       "coffee",
-      "technology",
-      "responsibility"]
+      "smartphone",
+      "responsibility"
+    ]
       word = words[Math.floor(Math.random() * words.length)];
       word = word.replace(/\s/g, "-");
       console.log(word);
@@ -197,16 +199,16 @@ window.onload = function () {
       hint.onclick = function() {
   
         hints = [
-            "digital",
-            "behaviour",
-            "result of something",
+            "lemon",
+            "summer",
+            "small shop",
             "information source",
             "boring",
-            "relation",
-            "buying",
+            "human head, lion body",
+            "synonym: buying",
             "energy",
-            "smartphones",
-            "duty",
+            "small computers",
+            "synonym: duty",
       ];
       var hintIndex = words.indexOf(word);
       showClue.innerHTML = "Clue: - " +  hints[hintIndex];
