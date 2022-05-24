@@ -83,7 +83,7 @@ function startGame(){
     exerciseIndex++;
     answerDiv.innerHTML = "Mbani mend rradhen e numrave dhe pastaj shtypni kutite sipas rradhes";
     if(numbersOrder[exerciseIndex] != undefined){
-        timeCounter = setInterval(myTimer, 1000);
+        timeCounter = setInterval(myTimer, 500);
     } else{
         calculatorContainer.style.display = "none";
         answerDiv.innerHTML = `Bravo kaluat te gjitha raundet ${'<br>'}
