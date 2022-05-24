@@ -22,8 +22,8 @@ function startGame(){
     startButton1.disabled = true;
     if(levelsAndLetters.theLevels[levelsAndLetters.levelIndex] != undefined){
         lettersContainer.innerHTML = `Mbaj mend -> ${levelsAndLetters.theLevels[levelsAndLetters.levelIndex]}`;
-        levelsAndLetters.hideLettersTimeout = setTimeout(startCountdown, 4000);
-        levelsAndLetters.seconds = levelsAndLetters.theLevels[levelsAndLetters.levelIndex].length+2;
+        levelsAndLetters.hideLettersTimeout = setTimeout(startCountdown, 3000);
+        levelsAndLetters.seconds = levelsAndLetters.theLevels[levelsAndLetters.levelIndex].length;
     } else{
         lettersContainer.style.display = "none";
         startButton1.style.display = "none";
